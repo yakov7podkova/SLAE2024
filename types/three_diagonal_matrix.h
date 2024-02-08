@@ -24,8 +24,6 @@ class TDM {
 
 }
 
-
-
 vd thomas_method(TDM &Mat, const vd &b); 
 
 
