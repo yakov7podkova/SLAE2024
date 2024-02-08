@@ -22,7 +22,7 @@ class TDM {
 //            high = std::move(Mat.high);
 //        }
 
-}
+};
 
 vd thomas_method(TDM &Mat, const vd &b); 
 
