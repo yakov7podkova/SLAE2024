@@ -1,4 +1,3 @@
-#include <iostream>
 #include <vector>
 
 using vd = std::vector<double>;
@@ -9,7 +8,6 @@ class TDM {
         vd low;
         vd high;
     public:
-        
         TDM(const vd &main, const vd &low, const vd &high) {
             this->main = main;
             this->low = low;
