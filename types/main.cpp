@@ -1,5 +1,5 @@
 #include <iostream>
-#include "three_diagonal_matrix.cpp"
+#include "../methods/thomas_method.cpp"
 
 
 int main() {
