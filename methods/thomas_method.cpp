@@ -1,4 +1,4 @@
-#include "three_diagonal_matrix.h"
+#include "../types/three_diagonal_matrix.h"
 
 
 
