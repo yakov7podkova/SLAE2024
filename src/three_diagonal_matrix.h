@@ -2,8 +2,7 @@
 
 using vd = std::vector<double>;
 
-class TDM {
-    private:
+struct TDM {
         vd main;
         vd low;
         vd high;
