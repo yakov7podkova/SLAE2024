@@ -7,10 +7,10 @@ struct TDM {
         vd low;
         vd high;
     public:
-        TDM(const vd &main, const vd &low, const vd &high) {
-            this->main = main;
-            this->low = low;
-            this->high = high;
+        TDM(const vd& _main, const vd& _low, const vd& _high) {
+            this->main = _main;
+            this->low = _low;
+            this->high = _high;
         };
 
 //        TDM(TDM &Mat) {
