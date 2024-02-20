@@ -2,7 +2,7 @@
 #include <iostream>
 
 
-vd thomas_method(TDM &Mat, const vd &d) {
+vd thomas_method(const TDM &Mat, const std::vector<double> &d) {
     vd p(d.size(), 0);
     vd q(d.size(), 0);
 

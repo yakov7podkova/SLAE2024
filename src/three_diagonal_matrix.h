@@ -3,15 +3,14 @@
 using vd = std::vector<double>;
 
 struct TDM {
-        vd main;
-        vd low;
-        vd high;
-    public:
-        TDM(const vd& _main, const vd& _low, const vd& _high) {
-            this->main = _main;
-            this->low = _low;
-            this->high = _high;
-        };
+    std::vector<double> main;
+    std::vector<double>  low;
+    std::vector<double> high;
+    
+        TDM(const std::vector<double>& _main, const std::vector<double>& _low, const std::vector<double>& _high) : main(_main),
+        low(_low),
+        high(_high)
+    {};
 
 //        TDM(TDM &Mat) {
 //            main = std::move(Mat.main);
@@ -21,7 +20,7 @@ struct TDM {
 
 };
 
-vd thomas_method(TDM &Mat, const vd &b); 
+vd thomas_method(const TDM &Mat, const std::vector<double> &b); 
 
 
 
