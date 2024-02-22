@@ -1,4 +1,7 @@
-set(HEADERS three_diagonal_matrix.h)
+set(HEADERS CSR_matrix.h
+    dense_matrix.h
+    three_diagonal_matrix.h
+    vector_operations.h)
 set(SOURCES thomas_method.cpp)
 
 add_library(${PROJECT_NAME} STATIC ${HEADERS} ${SOURCES})
