@@ -79,27 +79,11 @@ denseMatrix transpose(denseMatrix &Mat){
     std::vector<double> vec(Mat.getColumns() * Mat.getRows(), 0);
     denseMatrix res(vec, Mat.getColumns());
 
-    for(size_t h = 0; h < Mat.getRows(); h++){
-        for(size_t w = 0; w < Mat.getColumns(); w++){
-            res(w, h) = Mat(h, w);
+    for(size_t i = 0; i < Mat.getRows(); i++){
+        for(size_t j = 0; j < Mat.getColumns(); j++){
+            res(j, i) = Mat(i, j);
         }
     }
     return res;
 }
-
-
-
-// denseMatrix transpose(denseMatrix &Mat) {
-//     std::vector<double> vec(Mat.getRows() * Mat.getColumns(), 0);
-//     denseMatrix res(vec, Mat.getRows());
-
-//     for(size_t i = 0; i < Mat.getRows(); i++){
-//         for(size_t j = 0; j < Mat.getColumns(); j++){
-//             res(j, i) = Mat(i, j);
-//         }
-//     }
-//     return res;
-// }
-
-
 
